@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-ink-900 font-sans text-ink-100 antialiased;
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, rgba(51, 196, 138, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(125, 137, 255, 0.10), transparent 60%),
+    radial-gradient(900px 600px at 50% 120%, rgba(240, 96, 127, 0.08), transparent 60%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(255, 209, 102, 0.35);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
